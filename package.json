@@ -1,0 +1,36 @@
+{
+  "name": "krr-auto-signup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/watchdog.js",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src/watchdog.js --presets env,stage-3\"",
+    "build": "babel src -s -D -d bin --presets env,stage-3 && npm install -g",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karasuma Chitose",
+  "license": "MIT",
+  "dependencies": {
+    "adbkit": "^2.11.0",
+    "async": "^2.6.0",
+    "es6-promise": "^4.1.1",
+    "https-proxy-agent": "^2.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.19.4",
+    "randomstring": "^1.1.5",
+    "sha256": "^0.2.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-core": "^6.1.21",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.0",
+    "babel-polyfill": "^6.1.19",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.22.0",
+    "nodemon": "^1.12.7",
+    "webpack": "^3.10.0"
+  }
+}
